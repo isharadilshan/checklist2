@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,26 +16,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powered by αlphabit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="MN2-I3-ftu">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powered by Swivel Tech" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="MN2-I3-ftu">
                                 <rect key="frame" x="0.0" y="627" width="375" height="20"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                 <color key="textColor" red="0.73333333333333328" green="0.78431372549019607" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SplashIcon" translatesAutoresizingMaskIntoConstraints="NO" id="93M-7G-XLX">
-                                <rect key="frame" x="151.5" y="307.5" width="72" height="72"/>
+                                <rect key="frame" x="171.5" y="317.5" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="128" id="IUB-S2-ixy"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="QVN-HN-aiq"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="64" id="YI4-td-khr"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="64" id="dOG-ED-TKG"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="64" id="hyr-2e-jdC"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="64" id="mEG-d2-3Xk"/>
+                                    <constraint firstAttribute="width" constant="32" id="otm-bj-N2B"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="64" id="prU-sL-V92"/>
+                                    <constraint firstAttribute="height" constant="32" id="wHg-tQ-G0A"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="128" id="wLw-gd-4Wq"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
                         <color key="backgroundColor" red="0.078431372549019607" green="0.11764705882352941" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="93M-7G-XLX" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Dtm-tF-usb"/>
                             <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="MN2-I3-ftu" secondAttribute="bottom" constant="20" id="OZV-Vh-mqD"/>
-                            <constraint firstItem="93M-7G-XLX" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="SUk-cE-Ot6"/>
                             <constraint firstItem="MN2-I3-ftu" firstAttribute="centerX" secondItem="Bcu-3y-fUS" secondAttribute="centerX" id="akx-eg-2ui"/>
-                            <constraint firstItem="93M-7G-XLX" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ccq-tV-0S5"/>
-                            <constraint firstItem="93M-7G-XLX" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="10" id="dSY-8o-SDx"/>
-                            <constraint firstItem="93M-7G-XLX" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="dsZ-h5-njP"/>
                             <constraint firstItem="93M-7G-XLX" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="eby-np-ClG"/>
                             <constraint firstItem="MN2-I3-ftu" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" id="i1E-0Y-4RG"/>
                             <constraint firstItem="93M-7G-XLX" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="wmy-aE-bDv"/>
@@ -48,6 +55,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="SplashIcon" width="72" height="72"/>
+        <image name="SplashIcon" width="697.5" height="697.5"/>
     </resources>
 </document>
