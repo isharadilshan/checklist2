@@ -1,0 +1,24 @@
+{
+  "globalException": [
+    "An unexpected error occurred",
+    "Error:",
+    "We have reported this to our team! Please close the app and start again!",
+    "Close"
+  ],
+  "rootStatus": "Root Status",
+  "buildInfo": "Build Info",
+  "wifiAdapter": "WiFi Adapter",
+  "rooted": "Rooted",
+  "notRooted": "Not Rooted",
+  "your": "Your",
+  "recheck": "Recheck",
+  "safetyNet": "SafetyNet Check",
+  "passed": "Passed",
+  "failed": "Failed",
+  "locationPermissionTitle": "Location permission is required for WiFi connections",
+  "locationPermissionMessage": "This app needs location permission as this is required to scan for wifi networks.",
+  "deny": "DENY",
+  "allow": "ALLOW",
+  "connectionInfo": "Connection Info",
+  "availableConnections": "Available Connections"
+}
