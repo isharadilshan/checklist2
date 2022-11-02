@@ -4,20 +4,16 @@ import {
   setJSExceptionHandler,
   setNativeExceptionHandler,
 } from 'react-native-exception-handler';
-import i18n from '../../../i18n';
 
 const GlobalExceptionHandler = () => {
   const jsErrorHandler = (e, isFatal) => {
     if (isFatal) {
       Alert.alert(
-        i18n.t('globalException.0'),
-        `
-          ${i18n.t('globalException.1')} ${e.name} ${e.message}\n
-          ${i18n.t('globalException.2')}
-          `,
+        'An unexpected error occurred',
+        `Error: ${e.name} ${e.message}\n We have reported this! Please close the app and start again!`,
         [
           {
-            text: i18n.t('globalException.3'),
+            text: 'Close',
           },
         ],
       );
@@ -26,14 +22,11 @@ const GlobalExceptionHandler = () => {
 
   const nativeErrorHandler = error => {
     Alert.alert(
-      i18n.t('globalException.0'),
-      `
-        ${i18n.t('globalException.1')} ${e.name} ${e.message}\n
-        ${i18n.t('globalException.2')}
-        `,
+      'An unexpected error occurred',
+      `Error: ${error}\n We have reported this! Please close the app and start again!`,
       [
         {
-          text: i18n.t('globalException.3'),
+          text: 'Close',
         },
       ],
     );

@@ -1,23 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {View} from 'react-native';
-import {useTheme} from 'react-native-paper';
-import StatusBar from '../../atoms/StatusBar';
 
-const ScreenWrapper = ({children, color}) => {
-  const {colors} = useTheme();
-
+const ScreenWrapper = ({children, color, noPaddings}) => {
   return (
-    <>
-      <StatusBar translucent={true} />
-      <View
-        style={{
-          flex: 1,
-          backgroundColor: color || colors.blueGrey,
-        }}>
-        {children}
-      </View>
-    </>
+    <View
+      style={{
+        flex: 1,
+        backgroundColor: '#243B55',
+        paddingHorizontal: noPaddings ? 0 : 16,
+      }}>
+      {children}
+    </View>
   );
 };
 

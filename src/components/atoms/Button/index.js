@@ -12,16 +12,15 @@ const Button = ({label, style, labelStyle, contentStyle, mode, ...rest}) => {
       style={{
         elevation: 0,
         borderWidth: mode === 'outlined' ? 1 : 0,
-        borderColor: colors.primary,
-        justifyContent: 'center',
-        alignItems: 'center',
+        borderColor: 'grey',
+        backgroundColor: colors.mattGreen,
         ...style,
       }}
-      contentStyle={{height: 40, ...contentStyle}}
+      contentStyle={{height: 48, ...contentStyle}}
       labelStyle={{
-        fontSize: 16,
-        lineHeight: 18,
-        color: mode === 'contained' || !mode ? colors.white : colors.primary,
+        fontSize: 20,
+        lineHeight: 22,
+        color: mode === 'contained' || !mode ? 'white' : 'purple',
         ...labelStyle,
       }}
       {...rest}>
