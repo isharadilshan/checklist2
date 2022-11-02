@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:background="@color/splashscreen_bg"
         android:textStyle="bold"
-        android:text="Powered by αlphabit"
+        android:text="Powered by Swivel Tech"
         android:textColor="@color/text_color" />
 
 </LinearLayout>
